@@ -109,10 +109,7 @@ function removeFalsyValues(arr) {
  *    getStringsLength([ 'angular', 'react', 'ember' ]) => [ 7, 5, 5 ]
  */
 function getStringsLength(arr) {
-  const nameLenght = arr.map(function (name) {
-    return name.length;
-  });
-  return nameLenght;
+  return arr.map((temp) => temp.length);
 }
 
 /**
@@ -132,8 +129,7 @@ function getStringsLength(arr) {
 function getAverage(arr) {
   if (arr.length > 0) {
     const value = arr.reduce((sum, current) => sum + current, 0);
-    const temp = value / arr.length;
-    const temp1 = temp.toFixed(2);
+    const temp1 = (value / arr.length).toFixed(2);
     return Number(temp1);
   }
   return 0;
