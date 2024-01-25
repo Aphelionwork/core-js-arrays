@@ -394,7 +394,7 @@ function getElementByIndices(arr, indices) {
     return arr[indices[0]];
   }
   return getElementByIndices(arr[indices[0]], indices.slice(1));
-//   return indices.reduce((acc, elem) => acc[elem], arr);
+  //   return indices.reduce((acc, elem) => acc[elem], arr);
 }
 
 /**
